@@ -24,10 +24,14 @@ public class InitDb {
 
     private final InitService initService;
 
+    /**
+     * @PostConstruct 통해 스프링 올라오면 init 실행
+     * init()에 코드 넣으면 안되나? -> 스프링 라이프사이클에 의해 트랜잭션이 잘 안됨. 분리해서 작성.
+     */
     @PostConstruct
     public void init() {
-        initService.dbInit1();
-        initService.dbInit2();
+        initService.doInit1();
+        initService.doInit2();
     }
 
     @Component
@@ -37,8 +41,7 @@ public class InitDb {
 
         private final EntityManager em;
 
-        public void dbInit1() {
-            System.out.println("Init1" + this.getClass());
+        public void doInit1() {
             Member member = createMember("userA", "서울", "1", "1111");
             em.persist(member);
 
@@ -56,8 +59,8 @@ public class InitDb {
             em.persist(order);
         }
 
-        public void dbInit2() {
-            Member member = createMember("userB", "진주", "2", "2222");
+        public void doInit2() {
+            Member member = createMember("userB", "인천", "2", "2222");
             em.persist(member);
 
             Book book1 = createBook("SPRING1 BOOK", 20000, 200);
@@ -74,26 +77,27 @@ public class InitDb {
             em.persist(order);
         }
 
+        private Delivery createDelivery(Member member) {
+            Delivery delivery = new Delivery();
+            delivery.setAddress(member.getAddress());
+            return delivery;
+        }
+
+        private Book createBook(String name, int price, int stockQuantity) {
+            Book book = new Book();
+            book.setName(name);
+            book.setPrice(price);
+            book.setStockQuantity(stockQuantity);
+            return book;
+        }
+
         private Member createMember(String name, String city, String street, String zipcode) {
             Member member = new Member();
             member.setName(name);
             member.setAddress(new Address(city, street, zipcode));
             return member;
         }
-
-        private Book createBook(String name, int price, int stockQuantity) {
-            Book book1 = new Book();
-            book1.setName(name);
-            book1.setPrice(price);
-            book1.setStockQuantity(stockQuantity);
-            return book1;
-        }
-
-        private Delivery createDelivery(Member member) {
-            Delivery delivery = new Delivery();
-            delivery.setAddress(member.getAddress());
-            return delivery;
-        }
     }
+
 }
 
