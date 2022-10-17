@@ -7,3 +7,6 @@
 * `2022.10.12` [API 개발 기본 - 회원 수정 API](https://uz2ni.notion.site/API-API-3a3bad8b3b7e45fdaa839e82fef96157)
 * `2022.10.12` [API 개발 기본 - 회원 조회 API](https://uz2ni.notion.site/API-API-a354ac2cef9f4cb29983eb415054c1e4)
 * `2022.10.13` [API 개발 고급 - 조회용 샘플 데이터 입력](https://uz2ni.notion.site/API-3b56768dcb3743d18babb2369c763c8c)
+* `2022.10.14` [API 개발 고급 - 지연 로딩과 조회 성능 최적화(V1)](https://uz2ni.notion.site/API-V1-7970de43573148a5b4824377f14f87d3)
+* `2022.10.18` [API 개발 고급 - 지연 로딩과 조회 성능 최적화(V2)](https://uz2ni.notion.site/API-V2-6f14f9f8bc04468da929d0251e67ba1b)
+* `2022.10.18` [API 개발 고급 - 지연 로딩과 조회 성능 최적화(V3)](https://uz2ni.notion.site/API-V3-0acb94012533430ebba94091efc22e60)
