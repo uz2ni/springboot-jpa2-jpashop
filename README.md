@@ -10,3 +10,4 @@
 * `2022.10.14` [API 개발 고급 - 지연 로딩과 조회 성능 최적화(V1)](https://uz2ni.notion.site/API-V1-7970de43573148a5b4824377f14f87d3)
 * `2022.10.18` [API 개발 고급 - 지연 로딩과 조회 성능 최적화(V2)](https://uz2ni.notion.site/API-V2-6f14f9f8bc04468da929d0251e67ba1b)
 * `2022.10.18` [API 개발 고급 - 지연 로딩과 조회 성능 최적화(V3)](https://uz2ni.notion.site/API-V3-0acb94012533430ebba94091efc22e60)
+* `2022.10.21` [API 개발 고급 - 컬렉션 조회 최적화(V1)](https://uz2ni.notion.site/API-V1-5fbe8ce3516a4aff972bbe14f9976628)
