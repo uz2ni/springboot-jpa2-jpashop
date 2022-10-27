@@ -15,3 +15,4 @@
 * `2022.10.24` [API 개발 고급 - 컬렉션 조회 최적화(V3)](https://uz2ni.notion.site/API-V3-78c3aee6854f47f2ab1b0a35269b40db)
 * `2022.10.26` [API 개발 고급 - 컬렉션 조회 최적화(V3.1)](https://uz2ni.notion.site/API-V3-1-420b6e6b46a74460865edf970ca15f07)
 * `2022.10.27` [API 개발 고급 - 컬렉션 조회 최적화(V4)](https://uz2ni.notion.site/API-V4-6b50fbbeebba4ef689d9d9f3fc29f4ff)
+* `2022.10.28` [API 개발 고급 - 컬렉션 조회 최적화(V5)]()
